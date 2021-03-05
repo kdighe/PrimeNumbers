@@ -17,6 +17,7 @@ public class PrimeNumberController {
 
 	@GetMapping("/primes/{number}")
 	public PrimeResponseDto getPrimeNumbers(@PathVariable(name = "number") int number) {
+		System.out.println("Controller layer::");
 		PrimeResponseDto responseDto = new PrimeResponseDto();
 		List<Integer> list = primeNumberService.getPrimeNumberList(number);
 		responseDto.setInitial(number);

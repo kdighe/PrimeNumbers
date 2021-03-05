@@ -22,6 +22,7 @@ class PrimeNumberServiceImplTest {
 	@Test
 	void testIsPrime() {
 		assertTrue(PrimeNumberServiceImpl.isPrime(31),"Number is not prime");
+	
 	}
 	
 }
